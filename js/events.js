@@ -69,7 +69,7 @@ function parseEvents()
 		needFilter = true;
 	}
 	
-	Papa.parse("https://ngaisan.github.io/events.csv"+"?_="+ (new Date).getTime(), {
+	Papa.parse("https://aznpoke.github.io/events.csv"+"?_="+ (new Date).getTime(), {
 		worker: true,
 		//header: true,
 		download: true,
