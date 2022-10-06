@@ -1,5 +1,5 @@
 var ballMap = new Map();
-Papa.parse("https://aznpoke.github.io/balls.csv"+"?_="+ (new Date).getTime(), {
+Papa.parse("https://ngaisan.github.io/balls.csv"+"?_="+ (new Date).getTime(), {
 	header: true,
 	download: true,
 	complete: function(results) {
@@ -13,7 +13,7 @@ Papa.parse("https://aznpoke.github.io/balls.csv"+"?_="+ (new Date).getTime(), {
 });
 
 var ribbonMap = new Map();
-Papa.parse("https://aznpoke.github.io/ribbons.csv"+"?_="+ (new Date).getTime(), {
+Papa.parse("https://ngaisan.github.io/ribbons.csv"+"?_="+ (new Date).getTime(), {
 	header: true,
 	download: true,
 	complete: function(results) {
@@ -27,7 +27,7 @@ Papa.parse("https://aznpoke.github.io/ribbons.csv"+"?_="+ (new Date).getTime(), 
 });
 
 var iconMap = new Map();
-Papa.parse("https://aznpoke.github.io/games.csv"+"?_="+ (new Date).getTime(), {
+Papa.parse("https://ngaisan.github.io/games.csv"+"?_="+ (new Date).getTime(), {
 	header: true,
 	download: true,
 	complete: function(results) {
@@ -69,7 +69,7 @@ function parseEvents()
 		needFilter = true;
 	}
 	
-	Papa.parse("https://aznpoke.github.io/events.csv"+"?_="+ (new Date).getTime(), {
+	Papa.parse("https://ngaisan.github.io/events.csv"+"?_="+ (new Date).getTime(), {
 		worker: true,
 		//header: true,
 		download: true,
