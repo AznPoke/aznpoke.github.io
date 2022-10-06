@@ -22,9 +22,16 @@
 </head>
 
 <body class="dark">
+	
+	
 	<div class="box">
 		<div class="row header">
-			<p>Welcome to AznSW's (in progress) events "sheet"!</p>
+			<p>Welcome to AznSW's (in progress) events "sheet"! 
+			</p>
+			<div class="mode">
+			<button type="submit" class="light">Light</button> 
+			<button type="submit" class="dark">Dark</button>
+			</div>
 			<label for="filter">Text Filter:</label>
 			<input id="filter" name="filter" onchange="filterTable()" onkeyup="filterKeyUp()" onchange="filterTable()">
 			<div class="filterRadio">
@@ -36,11 +43,19 @@
 				<label for="showPersonal" class="radioLabel">Show Personal</label>
 				<input type="radio" id="showAll" name="showType" onclick="filterTable()" value="all" class="radio">
 				<label for="showAll" class="radioLabel">Show All</label>
+				
+	
+				
 			</div>
 			&nbsp;
+			
 			<input type="checkbox" id="showMultiples" name="showMultiples" onclick="filterTable()" class="radio">
 			<label for="showMultiples" class="radioLabel">Show Multiples</label>
 			<br>
+
+			
+			
+			
 		</div>
 		<div class="row content" id="tableWrapper">
 			<table class="table" id="eventTable">
