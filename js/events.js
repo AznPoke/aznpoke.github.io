@@ -1,3 +1,11 @@
+$(document).ready(function () {
+	$('button').click(function () {
+		$("body").removeClass();
+		var className = $(this).attr('class');
+		$('body').addClass(className);
+	})
+});
+
 
 var ballMap = new Map();
 Papa.parse("https://aznpoke.github.io/balls.csv"+"?_="+ (new Date).getTime(), {

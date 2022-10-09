@@ -17,6 +17,7 @@ button.light
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
   text-align:center;
   transition: all 0.2s;
+  cursor: pointer;
 }
 button.dark
 {
@@ -33,6 +34,7 @@ button.dark
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
   text-align:center;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 html,
