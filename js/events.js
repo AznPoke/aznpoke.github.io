@@ -1,10 +1,3 @@
-$(document).ready(function () {
-	$('button').click(function () {
-		$("body").removeClass();
-		var className = $(this).attr('class');
-		$('body').addClass(className);
-	})
-});
 
 var ballMap = new Map();
 Papa.parse("https://aznpoke.github.io/balls.csv"+"?_="+ (new Date).getTime(), {
@@ -149,7 +142,7 @@ function addPokemon(row, i)
 	if (row[5] != "")
 		pokemon = row[5].toLowerCase();
 	
-	var address = "https://projectpokemon.org/images/sprites-models/swsh-"+shinyLink+"-sprites/"+pokemon+".gif";
+	var address = "https://play.pokemonshowdown.com/sprites/ani"+shinyLink+"/"+pokemon+".gif";
 	var onError = "loadGen7Animated(this)";
 	if (row[5].startsWith("http"))
 	{
@@ -278,9 +271,9 @@ function loadGen7Animated(img)
 {
 	var pokemon = img.dataset.pokemon;
 	var isShiny = img.dataset.shiny;
-	var shinyLink = isShiny == "" ? "normal" : "shiny";
+	var shinyLink = isShiny == "" ? "" : "-shiny";
 	img.onerror = function() {loadMsikma(img)};
-	img.src = "https://projectpokemon.org/images/"+shinyLink+"-sprite/"+ pokemon + ".gif";
+	img.src = "https://play.pokemonshowdown.com/sprites/ani"+shinyLink+"/"+ pokemon + ".gif";
 }
 
 function loadMsikma(img)
@@ -371,4 +364,5 @@ function filterTable() {
   $("table tbody tr:visible:odd").addClass("odd");
   $("table tbody tr:visible:even").addClass("even");
 }
+
 
