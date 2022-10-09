@@ -180,11 +180,11 @@ tr.personal:hover
 
 .dark tr.personal
 {
-	background-color: #450606 !important; 
+	background-color: #322136 !important; 
 }
 .dark tr.personal.even
 {
-  background-color: #560C0C !important; 
+  background-color: #47374a !important; 
 }
 .dark tr.personal:hover 
 {
@@ -197,7 +197,7 @@ tr.traded
 }
 .dark tr.traded
 {
-	background-color: #610061 !important;
+	background-color: #75273b !important;
 }
 tr td.wrongGen
 {
