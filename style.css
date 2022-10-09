@@ -80,6 +80,7 @@ body.dark
 .box .row.footer {
   margin: 0 5px 0 5px;
   flex: 0 1 auto;
+  font-size: 0.4em;
 }
 
 .filterRadio {
