@@ -92,7 +92,7 @@ function parseEvents()
 			//d3.event.preventDefault();
 			for (var i = 3; i < results.data.length; i++) {
 			  var row = results.data[i];
-			  if (row.length <= 1 || row[4] == "" || row[34] == "TRUE")
+			  if (row.length <= 1 || row[4] == "" || row[31] == "TRUE")
 				  continue;
 
 			  var rowHtml = "<td>"+(i-2)+"</td>";
