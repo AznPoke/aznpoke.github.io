@@ -150,11 +150,20 @@ img.pokemon{
 img.msikma {
 	height: auto;
 	position: relative;
-	top: -14px;
+	top: -20px;
 }
 div.msikma {
 	height: 40px;
 	overflow: hidden;
+}
+img.pokemondb {
+	height: auto;
+	position: relative;
+  top:0px;
+}
+div.pokemondb {
+	height: 40px;
+	overflow:hidden;
 }
 .event, .pokemon, .history, .ot
 {

@@ -286,7 +286,7 @@ function loadGen7Animated(img)
 
 function loadMsikma(img)
 {
-	img.onerror = null;
+	img.onerror = function() {loadPokemonDB(img)};
 	var pokemon = img.dataset.pokemon;
 	var isShiny = img.dataset.shiny;
 	var shinyLink = isShiny == "" ? "regular" : "shiny";
@@ -295,6 +295,19 @@ function loadMsikma(img)
 	img.parentElement.classList.add("msikma");
 	img.src = "https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/"+shinyLink+"/"+pokemon+".png"
 }
+
+function loadPokemonDB(img)
+{
+	img.onerror = null;
+	var pokemon = img.dataset.pokemon;
+	var isShiny = img.dataset.shiny;
+	var shinyLink = isShiny == "" ? "regular" : "shiny";
+	
+	img.classList.add("pokemondb");
+	img.parentElement.classList.add("pokemondb");
+	img.src = "https://img.pokemondb.net/sprites/scarlet-violet/icon/"+pokemon+".png"
+}
+
 
 function loaded()
 {	
