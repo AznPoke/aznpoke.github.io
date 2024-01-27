@@ -80,7 +80,10 @@ function parseEvents()
 		needFilter = true;
 	}
 	
-	Papa.parse("https://aznpoke.github.io/events.csv"+"?_="+ (new Date).getTime(), {
+	var event_sheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSUQk-oPFKWg9hUBhVOQ-n5ZtQrCsZ6nlcfJrAYJrkImGyBrz2XjXvBQb7rslGCnCjqRfTbPbWv3wWR/pub?output=csv';
+
+	
+	Papa.parse(event_sheet_url+"?_="+ (new Date).getTime(), {
 		worker: true,
 		//header: true,
 		download: true,
